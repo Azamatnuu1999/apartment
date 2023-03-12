@@ -1,0 +1,23 @@
+.second{
+    margin-top: 50px;
+    background-image: url(../media/Rectangle\ 24.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    .contain{
+        &__h3{
+            font-family: 'Bebas Neue', cursive;
+        }
+        &__ul{
+            font-size: 14px;
+            padding-left: 0;
+            display: flex;
+            justify-content: space-between;
+            li{
+                text-align: center;
+                b{
+                    color: $qizil;
+                }
+            }
+        }
+    }
+}

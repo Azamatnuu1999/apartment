@@ -1,0 +1,56 @@
+.eleven{
+    .contain{
+        form{
+            fieldset{
+                legend{
+                    font-family: 'Bebas Neue', cursive;
+                }
+                ul{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    padding-left: 0;
+                    li{
+                        width: 31%;
+                        button{
+                            color: white;
+                            padding: 4px 12px;
+                            border: 1px solid $qizil;
+                            background-color: $qizil;
+                            border-radius: 3px;
+                            font-size: 14px;
+                            font-weight: 500;
+                        }
+                        button:hover{
+                            background-color: white;
+                            color: $qizil;
+                        }
+                        input{
+                            width: 100%;
+                        }
+                    }
+                }
+                p{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:400px){
+    .eleven{
+        .contain{
+            form{
+                fieldset{
+                    ul{
+                        li{
+                            width: 100%;
+                            margin: 6px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

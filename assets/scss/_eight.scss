@@ -1,0 +1,21 @@
+.eight{
+    margin-top: 50px;
+    background-image: url(../media/Rectangle\ 24.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    .contain{
+        &__h3{
+            font-family: 'Bebas Neue', cursive;
+            text-align: start;
+        }
+        .slider{
+            ul{
+                li{
+                    img{
+                        height: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+}

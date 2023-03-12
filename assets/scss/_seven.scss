@@ -1,0 +1,62 @@
+.seven{
+    margin-top: 50px;
+    background-image: url(../media/Rectangle\ 25.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    .contain{
+        &__h3{
+            font-family: 'Bebas Neue', cursive;
+            text-align: center;
+        }
+        &__ul{
+            font-size: 14px;
+            padding-left: 0;
+            display: flex;
+            text-align: center;
+            flex-wrap: wrap;
+            width: fit-content;
+            gap: 20px;
+            margin: 0 auto;
+            li:first-child{
+                font-weight: 600;
+                border-bottom: 1px solid $qizil;
+            }
+        }
+        .main{
+            display: flex;
+            margin: 40px 0;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .left{
+                width: 200px;
+                &__button{
+                    font-size: 13px;
+                    color: white;
+                    width: 100%;
+                    padding: 4px 12px;
+                    border: 1px solid $qizil;
+                    background-color: $qizil;
+                    border-radius: 3px;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+                &__ul{
+                    padding-left: 0;
+                    li{
+                        height: 32px;
+                        border-bottom: 1px solid gray;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
+                &__button:hover{
+                    background-color: white;
+                    color: $qizil;
+                }
+            }
+            .right{
+                width: calc(100% - 240px);
+            }
+        }
+    }
+}

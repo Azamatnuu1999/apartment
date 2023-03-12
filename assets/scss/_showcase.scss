@@ -1,0 +1,149 @@
+.aside{
+    position: fixed;
+    padding: 20px 30px;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 300px;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 6px grey;
+    &__span{
+        display: none;
+    }
+    &__logo{
+        width: 60%;
+        margin: 0 auto;
+    }
+    &__ul{
+        text-align: start;
+        padding-left: 0;
+        .first{
+            color: $qizil;
+            list-style-image: url(../media/7.png);
+        }
+    }
+    &__bottom{
+        text-align: start;
+        padding-left: 0;
+        li:nth-child(2){
+            list-style-image: url(../media/Location\ icon.png);
+            font-weight: 300;
+        }
+        li:nth-child(3){
+            list-style-image: url(../media/Phone\ icon.png);
+            font-weight: 300;
+        }
+        li:nth-child(4){
+            color: $qizil;
+        }
+        i{
+            border: 1px solid grey;
+            padding: 5px;
+            border-radius: 50%;
+        }
+    }
+}
+.check{
+    display: none;
+}
+.check:checked ~ aside{
+    transform: translateX(0);
+    transition-duration: .3s;
+    transition-timing-function: linear;
+    background-color: white;
+    z-index: 1;
+}
+header{
+    background-image:url(../media/hov.png), url(../media/15\ 1.png);
+    background-repeat: no-repeat;
+    background-position:top center, center center;
+    background-size: 70%, cover;
+    height: 100vh;
+    position: relative;
+    .navbar{
+        display: flex;
+        font-size: 14px;
+        background-color: white;
+        padding-left: 0;
+        justify-content: space-between;
+        padding: 0 10%;
+        &__left{
+            margin: 5px 0;
+            padding: 5px 0;
+            padding-left: 0;
+            display: flex;
+            gap: 12px;
+        }
+        &__right{
+            margin: 5px 0;
+            padding: 5px 0;
+            .res{
+                display:  none;
+                font-size: 18px;
+                color: $qizil;
+            }
+        }
+    }
+    .showcase{
+        &__button{
+            position: absolute;
+            bottom: 0;
+            left: 10%;
+            color: white;
+            padding: 4px 12px;
+            border: 1px solid $qizil;
+            background-color: $qizil;
+            border-radius: 3px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        &__button:hover{
+            background-color: white;
+            color: $qizil;
+        }
+    }
+}
+
+@media(max-width:670px){
+    header{
+        .navbar{
+            &__right{
+                display: flex;
+                gap: 10px;
+                .res{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:450px){
+    header{
+        .navbar{
+            &__left{
+                display: none;
+            }
+            &__right{
+                margin-left: auto;
+            }
+        }
+    }
+}
+
+@media(max-width:350px){
+    .aside{
+        &__span{
+            display: block;
+            position: absolute;
+            top: 10px;
+            right: 40px;
+            color: $qizil;
+            z-index: 2;
+        }
+    }
+}

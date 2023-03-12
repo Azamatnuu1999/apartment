@@ -1,0 +1,58 @@
+.ten{
+    margin-top: 50px;
+    background-image: url(../media/Rectangle\ 24.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    .contain{
+        &__h3{
+            font-family: 'Bebas Neue', cursive;
+            text-align: start;
+        }
+        &__ul{
+            font-size: 14px;
+            padding-left: 0;
+            display: flex;
+            text-align: center;
+            flex-wrap: wrap;
+            width: fit-content;
+            gap: 20px;
+            margin: 0 auto;
+            li:first-child{
+                font-weight: 600;
+                border-bottom: 1px solid $qizil;
+            }
+            li:hover{
+                border-bottom: 1px solid $qizil;
+            }
+        }
+        .main{
+            display: flex;
+            margin: 40px 0;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .card1{
+                width: 24%;
+                font-size: 12px;
+                p{
+                    margin: 4px 5px;
+                }
+            }
+            .card1:hover{
+                box-shadow: 0 0 7px grey;
+            }
+        }
+    }
+}
+
+@media(max-width:900px){
+    .ten{
+        .contain{
+            .main{
+                .card1{
+                    width: 49%;
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+}
